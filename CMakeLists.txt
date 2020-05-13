@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10)
+project(cluster_metrics)
+add_subdirectory(lib)
+add_executable(cluster_metrics main.cpp)
+target_link_libraries(cluster_metrics cluster_metrics_lib)
